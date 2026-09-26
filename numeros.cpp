@@ -2,7 +2,14 @@
 using namespace std;
 
 int fatorial(int);
-int fibonacci(int);
+int fibonacci(int n){
+    if (n <= 1){
+        return n;
+    }   
+
+    return fibonacci(n - 1) + fibonacci(n - 2);
+
+}
 int somaSequencial(int,int);
 
 //tentativa
@@ -49,4 +56,8 @@ int fatorial(int num){
         return 1;
     }
     return num*fatorial(num-1);
+}
+int somaSequencial(int inferior, int superior){
+    int soma = ((inferior+superior)*(superior-inferior+1))/2;
+    return soma;
 }
