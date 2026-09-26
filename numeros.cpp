@@ -43,3 +43,7 @@ int main(){
 }
 
 
+int somaSequencial(int inferior, int superior){
+    int soma = ((inferior+superior)/2)*superior-inferior;
+    return soma;
+}
