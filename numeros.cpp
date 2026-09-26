@@ -50,6 +50,12 @@ int main(){
 }
 
 
+int fatorial(int num){
+    if(num<=1){
+        return 1;
+    }
+    return num*fatorial(num-1);
+}
 int somaSequencial(int inferior, int superior){
     int soma = ((inferior+superior)/2)*superior-inferior;
     return soma;
