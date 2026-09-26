@@ -57,6 +57,6 @@ int fatorial(int num){
     return num*fatorial(num-1);
 }
 int somaSequencial(int inferior, int superior){
-    int soma = ((inferior+superior)/2)*superior-inferior;
+    int soma = ((inferior+superior)*(superior-inferior+1))/2;
     return soma;
 }
