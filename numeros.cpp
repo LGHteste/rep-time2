@@ -12,6 +12,7 @@ int fibonacci(int n){
 }
 int somaSequencial(int,int);
 
+//tentativa
 
 int main(){
     int opcao=0;
