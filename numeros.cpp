@@ -15,22 +15,20 @@ int main(){
              << "2-Fibonacci\n"
              << "3-Soma Sequencial\n";
         cin >> opcao;
+        int num1=0, num2=0;
         switch (opcao)
         {
         case 1:
-               int num=0;
                cout << "Digite o numero para fazer o fatorial:\n";
-               cin >> num;
-               cout << "Fatorial = " << fatorial(num) << endl;
+               cin >> num1;
+               cout << "Fatorial = " << fatorial(num1) << endl;
                break;
         case 2:
-               int num=0;
                cout << "Digite o numero de iteracoes de fibonacci:\n";
-               cin >> num;
-               cout << "Fibonacci = " << fibonacci(num) << endl;
+               cin >> num1;
+               cout << "Fibonacci = " << fibonacci(num1) << endl;
                break; 
         case 3:
-               int num1=0, num2=0;
                cout << "Digite o limite inferior da soma:\n";
                cin >> num1;
                cout << "Digite o limite superior da soma:\n";
@@ -43,3 +41,5 @@ int main(){
     }while(opcao!=0);
     return 0;
 }
+
+
